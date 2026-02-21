@@ -5,12 +5,14 @@ title: "Abstract"
 slug: abstract
 ---
 
-Following the wake of centralized exchanges, early decentralized exchanges led the DeFi movement using order books and liquidity pools. Yet DeFi users still lacked a fully decentralized way to onramp from fiat to crypto and offramp back to fiat.
+## Trustless On/Off-Ramps, Powered by Zero-Knowledge Proofs
 
-P2P Protocol reflects a departure from fiat escrows and traditional custodians by using zero-knowledge (ZK) proofs for KYC norms and fiat transfer verification, making on/off-ramps non-custodial, privacy-preserving, and governed by users' collective interests.
+Centralized exchanges dominated early crypto. Decentralized exchanges followed, bringing order books, liquidity pools, and on-chain settlement. But one problem remained unsolved , moving between fiat and crypto without handing control to a custodian.
 
-Based on the Base network, P2P Protocol trustlessly matches buyers and highly vetted merchants according to a Proof-of-Credibility reputation algorithm, settles trades with on-chain coordination, and resolves disputes through verifiable proofs rather than platform custody. This paper formalizes design goals, protocol flows, reputation, dispute resolution, pricing, security and privacy models, governance, and token economics in preparation for a Token Generation Event (TGE) planned for March 2026.
+**[P2P](https://p2p.lol/en)** changes that. By replacing fiat escrows and traditional custodians with zero-knowledge (ZK) proofs for KYC verification and fiat transfer validation, it delivers on/off-ramps that are non-custodial, privacy-preserving, and governed by the people who use them rather than the platform.
 
-The end-state is a credibility-based DeFi ecosystem where peers transact, save, and build services on top of an open Proof-of-Credibility graph—useful, easy to use, privacy-first, and not reliant on over-collateralized mechanics for every everyday action. This paper lays out that vision, the principles guiding it, what works today, and the path to a mature, protocol-neutral, global network by and beyond 2026.
+Built on Base, **[P2P](https://p2p.lol/en)** seamlessly connects buyers with credentialed merchants through a **[Proof-of-Credibility](/whitepaper/proof-of-credibility-reputation-matching)** reputation algorithm. Trades settle on-chain. Disputes resolve through verifiable proofs rather than platform arbitration. This paper lays out the full technical and economic foundation covering design goals, protocol flows, reputation mechanics, dispute resolution, pricing models, security and privacy architecture, governance, and token economics ahead of a Token Generation Event (TGE) planned for March 2026.
+
+The goal is a DeFi ecosystem built on credibility rather than collateral, where peers transact, save, and build freely on an open **[Proof-of-Credibility](/whitepaper/proof-of-credibility-reputation-matching)** graph. This paper outlines the vision, the principles behind it, the current state of the network, and the roadmap toward a mature, protocol-neutral global system by 2026 and beyond.
 
 ---
