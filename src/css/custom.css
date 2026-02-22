@@ -77,6 +77,7 @@
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -115,7 +116,8 @@
 
   --site-sidebar-bg: #f8f9fa;
   --site-toc-bg: #f8f9fa;
-  --site-footer-bg: #1a1a1a; /* Keep dark footer for contrast */
+  --site-footer-bg: #1a1a1a;
+  /* Keep dark footer for contrast */
 
   --glass-bg: rgba(0, 0, 0, 0.04);
   --glass-border: rgba(0, 0, 0, 0.08);
@@ -173,16 +175,12 @@ body::before {
   height: 100vh;
   z-index: -1;
   background-image:
-    radial-gradient(
-      circle at 15% 50%,
+    radial-gradient(circle at 15% 50%,
       rgba(73, 63, 238, 0.08),
-      transparent 25%
-    ),
-    radial-gradient(
-      circle at 85% 30%,
+      transparent 25%),
+    radial-gradient(circle at 85% 30%,
       rgba(106, 98, 245, 0.08),
-      transparent 25%
-    );
+      transparent 25%);
   pointer-events: none;
 }
 
@@ -254,13 +252,86 @@ h6 {
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .navbar__brand {
   font-family: "Nohemi", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.03em;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  transition: transform 0.2s ease;
+}
+
+.navbar__brand:hover {
+  transform: translateY(-1px);
+}
+
+/* Professional Navbar Links with [] Separator */
+@media (min-width: 997px) {
+  .navbar__items {
+    gap: 0.5rem;
+  }
+
+  .navbar__item.navbar__link {
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--p2p-text-primary);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .navbar__item.navbar__link::before {
+    content: "[";
+    color: var(--p2p-text-secondary);
+    opacity: 0.4;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+
+  .navbar__item.navbar__link::after {
+    content: "]";
+    color: var(--p2p-text-secondary);
+    opacity: 0.4;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+
+  .navbar__item.navbar__link:hover {
+    color: var(--p2p-text-primary);
+    background: var(--glass-bg);
+    transform: translateY(-1px);
+  }
+
+  .navbar__item.navbar__link:hover::before,
+  .navbar__item.navbar__link:hover::after {
+    color: var(--p2p-blue);
+    opacity: 1;
+  }
+
+  .navbar__item.navbar__link--active {
+    color: var(--p2p-text-primary);
+  }
+
+  .navbar__item.navbar__link--active::before,
+  .navbar__item.navbar__link--active::after {
+    color: var(--p2p-blue);
+    opacity: 1;
+    font-weight: 600;
+  }
+
+  .navbar__items>.navbar__item.navbar__link+.navbar__item.navbar__link {
+    margin-left: 0.5rem;
+  }
 }
 
 /* Sidebar Navigation - Contrast */
@@ -270,10 +341,7 @@ h6 {
 }
 
 /* Top-level sidebar category (Documentation Title) */
-.theme-doc-sidebar-menu
-  > .menu__list-item
-  > .menu__list-item-collapsible
-  > .menu__link {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list-item-collapsible>.menu__link {
   font-family: "Nohemi", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
@@ -282,32 +350,22 @@ h6 {
   margin-bottom: 0.25rem;
 }
 
-.theme-doc-sidebar-menu
-  > .menu__list-item
-  > .menu__list-item-collapsible
-  > .menu__link:hover {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list-item-collapsible>.menu__link:hover {
   background: transparent;
 }
 
 /* Collapse toggle for documentation title */
-.theme-doc-sidebar-menu
-  > .menu__list-item
-  > .menu__list-item-collapsible
-  > .menu__caret {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list-item-collapsible>.menu__caret {
   padding: 0.75rem;
 }
 
 /* Nested chapter items under documentation title */
-.theme-doc-sidebar-menu > .menu__list-item > .menu__list {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list {
   border-left: none;
   padding-left: 0;
 }
 
-.theme-doc-sidebar-menu
-  > .menu__list-item
-  > .menu__list
-  > .menu__list-item
-  > .menu__link {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list>.menu__list-item>.menu__link {
   padding-left: 1rem;
   font-size: 0.9rem;
   border-left: 2px solid var(--border-color);
@@ -315,20 +373,12 @@ h6 {
   margin-left: 0.5rem;
 }
 
-.theme-doc-sidebar-menu
-  > .menu__list-item
-  > .menu__list
-  > .menu__list-item
-  > .menu__link--active {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list>.menu__list-item>.menu__link--active {
   border-left-color: var(--p2p-blue);
   background: transparent !important;
 }
 
-.theme-doc-sidebar-menu
-  > .menu__list-item
-  > .menu__list
-  > .menu__list-item
-  > .menu__link--active::before {
+.theme-doc-sidebar-menu>.menu__list-item>.menu__list>.menu__list-item>.menu__link--active::before {
   transform: translateX(0);
   opacity: 1;
   animation: sidebarGradientSlide 0.4s ease-out forwards;
@@ -354,11 +404,9 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(73, 63, 238, 0.15) 0%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(73, 63, 238, 0.15) 0%,
+      transparent 100%);
   transform: translateX(-100%);
   opacity: 0;
   z-index: -1;
@@ -524,7 +572,8 @@ h6 {
 
 .footer__title {
   font-family: "Nohemi", sans-serif;
-  color: #fff; /* Keeping Footer Dark-ish styled for now, or adapt? Let's adapt text if bg changes */
+  color: #fff;
+  /* Keeping Footer Dark-ish styled for now, or adapt? Let's adapt text if bg changes */
 }
 
 /* If footer is always dark, force white text. 
@@ -534,9 +583,11 @@ h6 {
 [data-theme="light"] .footer {
   color: #fff;
 }
+
 [data-theme="light"] .footer__title {
   color: #fff;
 }
+
 [data-theme="light"] .footer__link-item {
   color: #909090;
 }
@@ -757,6 +808,7 @@ h6 {
 
 /* Responsive Styles */
 @media (max-width: 996px) {
+
   /* Navbar mobile */
   .navbar__logo {
     height: 24px;
@@ -785,6 +837,7 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
   /* Hero section mobile */
   .hero-title {
     font-size: 2.5rem;

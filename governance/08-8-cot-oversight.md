@@ -13,7 +13,11 @@ Audits prevent admin-merchant collusion (fake claims, biased disputes, volume in
 |------|-----------|
 | Claim approval rate | >80% |
 | Claims per merchant | >5/month |
+<<<<<<< Updated upstream
 | Audit cooldown | &lt;90 days |
+=======
+| Audit cooldown | < 90 days |
+>>>>>>> Stashed changes
 
 ## 8.2 Audit Process
 
