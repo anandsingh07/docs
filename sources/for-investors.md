@@ -111,11 +111,27 @@ No investor or team tokens unlock at TGE. At launch, 12.9M tokens circulate (10M
 The $P2P token launches on Solana through a MetaDAO-style sale mechanism designed for fair, community-first distribution.
 
 1. Users commit USDC on Solana during a 4-day commitment window
-2. Founders set a discretionary cap on total raise accepted
+2. Founders set the total USDC accepted (**F**) using commitment-weighted tiers (see below)
 3. If oversubscribed, allocations and refunds are distributed pro-rata
 4. 10M tokens are distributed proportionally among all participants at launch
 5. Post-sale, the treasury provides 20% of raised USDC and 2.9M tokens to liquidity pools
 6. Mint authority transfers to the market-governed treasury
+
+**Note — no bid wall.** The sale does not use a bid-wall or minimum-bid ladder. Clearing is pro-rata against the accepted cap; any USDC that is not allocated is refunded.
+
+### Raise size, FDV steps, and refunds
+
+The public ask is **$6M** USDC. If total commitments exceed **$6M**, only the accepted amount is filled; **excess commitments are refunded** according to the pro-rata and XP-preference steps below.
+
+How much can be accepted scales with **total commitments** (**C**):
+
+| If total commitments **C**… | USDC accepted | Implied FDV |
+|----------------------------|---------------|-------------|
+| **C** ≤ **$80M** | Up to **$6M** | — |
+| **$80M** < **C** ≤ **$150M** | Up to **$8M** | **$20M** |
+| **C** > **$150M** | Up to **$10M** | **$25M** |
+
+Only when **C** is **greater than $80M** does the sale accept up to **$8M** at **$20M** FDV. Only when **C** is **greater than $150M** does it accept up to **$10M** at **$25M** FDV. In all cases, unaccepted USDC is returned to participants.
 
 Existing protocol users receive a preferential allocation at the same valuation as all ICO investors, based on their XP on [p2p.foundation](https://p2p.foundation/).
 
@@ -442,7 +458,7 @@ Yes. This is protocol ownership, distinct from equity in a traditional company. 
 
 ### How does the MetaDAO-style sale work?
 
-Users commit USDC during a 4-day window. If oversubscribed, allocations are pro-rata. Existing protocol users receive a preferential allocation at the same valuation as all ICO investors, based on their XP on [p2p.foundation](https://p2p.foundation/). No private rounds happen at TGE. The sale is the primary distribution event.
+Users commit USDC during a 4-day window. **There is no bid wall**—clearing is pro-rata against the accepted cap, with refunds for any unallocated USDC. The ask is **$6M**; if commitments exceed that, excess is refunded. If total commitments are **above $80M** (and up to **$150M**), up to **$8M** is accepted at **$20M** FDV; if they are **above $150M**, up to **$10M** is accepted at **$25M** FDV. If oversubscribed at the active cap, allocations follow the pro-rata and XP-preference rules on the [MetaDAO sale](/for-investors/metadao-sale) page. Existing protocol users receive a preferential allocation at the same valuation as all ICO investors, based on their XP on [p2p.foundation](https://p2p.foundation/). No private rounds happen at TGE. The sale is the primary distribution event.
 
 ### What unlocks at TGE?
 
