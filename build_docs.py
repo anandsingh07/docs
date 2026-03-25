@@ -478,6 +478,7 @@ const config: Config = {{
 
   clientModules: [
     './src/clientModules/tocAutoScroll.js',
+    './src/clientModules/askAiSelection.js',
   ],
 
   presets: [
