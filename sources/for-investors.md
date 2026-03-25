@@ -28,7 +28,7 @@ Also see [`/whitepaper`](/whitepaper/abstract) for protocol context and [`/for-b
 - **Expansion path is clear.** Remittance and multi-currency tracks build on existing rails. They add corridors and users, not new trust assumptions.B2B SDK for third party developers to integrate P2P protocol rails is set to launch by june 2026
 - **Early-stage structure.** Compact launch supply with no insider tokens at TGE.
 - **Governance transition path.** Admin-operated today, with a documented multi-phase migration to token-governed control.
-- **Value capture is explicit.** Staking, delegation, and treasury contributions connect protocol revenue to token economics.
+- **Operational participation is explicit.** Staking, delegation, and treasury governance connect active participants to protocol operations.
 - **Sustainable growth is achieved.** Over the last 16 months an average month-on-month growth of 27% is recorded, with 2 years of live transaction volume and $4M monthly volume recorded in February 2026. We expect the protocol to continue with the same growth rate over the next 18 months to reach $500M in monthly volume. Protocol metrics can be tracked on-chain [here](https://dune.com/p2pme/latest).
 - **Revenue-generating today.** $578K in annual revenue run rate. Unit breakeven achieved, with up to 20% of revenue expected to flow as gross profit to the treasury from June 2026.
 
@@ -43,8 +43,8 @@ P2P on/off ramping is critical infrastructure for emerging markets. Millions of 
 The token enables four things.
 
 - **Decentralized governance.** Holders vote on fees, limits, merchant rules, and treasury allocation. No single operator controls these decisions.
-- **Trust staking ("Circles of Trust").** Token holders stake $P2P on merchant liquidity pools to attest to their trustworthiness, earning stablecoin yield from the Circle's transaction revenue.
-- **Revenue-linked ownership.** 20% of protocol revenue flows to the treasury, planned to increase to 35% as the protocol matures—subject to MetaDAO futarchy governance. The treasury can fund buy-and-burn or other value-accruing actions, directly connecting token value to network usage and growth.
+- **Trust staking ("Circles of Trust").** Token holders stake $P2P on merchant liquidity pools to attest to their trustworthiness. Active participants in a Circle may receive incentive allocations from the protocol's fee distribution contracts, conditional on the Circle's operational performance.
+- **Governance-directed treasury.** 20% of protocol fees flow to an on-chain treasury, planned to increase to 35% as the protocol matures—subject to MetaDAO futarchy governance. Token holders decide how these funds are deployed, including supply reduction through token retirement, ecosystem development, or liquidity operations. Treasury deployment is a governance-determined operational parameter, not a contractual right.
 - **Censorship resistance.** Decentralized ownership means no single point of failure. The protocol can survive regulatory pressure in any one jurisdiction because control is distributed globally among token holders.
 
 ---
@@ -68,7 +68,7 @@ The token enables four things.
 
 **Governance.** Token holders vote on protocol parameters such as fees, limits, merchant rules, oracle configs, and treasury allocation. One staked $P2P = one vote, with delegation.
 
-**Staking.** Circle Admins stake $P2P to operate merchant networks. Community members delegate $P2P to Circles to participate in revenue sharing. Merchants stake USDC as working capital. The staking design creates skin-in-the-game at every layer.
+**Staking.** Circle Admins stake $P2P to operate merchant networks. Community members delegate $P2P to Circles to participate in protocol operations. Delegators who actively support a Circle's performance may receive incentive allocations from the fee distribution contracts. Merchants stake USDC as working capital. The staking design creates skin-in-the-game at every layer.
 
 **Fee distribution.** Protocol revenue is routed across participants.
 
@@ -79,7 +79,7 @@ The token enables four things.
 | Insurance Pools | 17.78% |
 | Circle Admins | 8.89% |
 
-No single party captures a majority of protocol revenue. Merchants earn the most because they provide working capital and operational labor. Treasury contributions connect token value to protocol usage—governance can direct these funds toward buy-and-burn or other value-accruing measures via MetaDAO futarchy. Insurance pools exist so disputes don't become externalised costs.
+No single party captures a majority of protocol fees. Merchants earn the most because they provide working capital and operational labor. Treasury contributions are governed by token holders via MetaDAO futarchy. Governance may direct these funds toward supply management, ecosystem development, liquidity operations, or other protocol-serving measures. Insurance pools exist so disputes don't become externalised costs.
 
 ---
 
@@ -127,11 +127,11 @@ How much can be accepted scales with **total commitments** (**C**):
 
 | If total commitments **C**… | USDC accepted | Implied FDV |
 |----------------------------|---------------|-------------|
-| **C** ≤ **$80M** | Up to **$6M** | **$15M** |
-| **$80M** < **C** ≤ **$150M** | Up to **$8M** | **$20M** |
-| **C** > **$150M** | Up to **$10M** | **$25M** |
+| **C** ≤ **$80M** | Up to **$6M** | **$15.48M** |
+| **$80M** < **C** ≤ **$150M** | Up to **$8M** | **$20.64M** |
+| **C** > **$150M** | Up to **$10M** | **$25.8M** |
 
-Only when **C** is **greater than $80M** does the sale accept up to **$8M** at **$20M** FDV. Only when **C** is **greater than $150M** does it accept up to **$10M** at **$25M** FDV. In all cases, unaccepted USDC is returned to participants.
+Only when **C** is **greater than $80M** does the sale accept up to **$8M** at **$20.64M** FDV. Only when **C** is **greater than $150M** does it accept up to **$10M** at **$25.8M** FDV. In all cases, unaccepted USDC is returned to participants.
 
 Existing protocol users receive a preferential allocation at the same valuation as all ICO investors, based on their XP on [p2p.foundation](https://p2p.foundation/).
 
@@ -306,14 +306,14 @@ Vesting is enforced via on-chain vesting contracts. Locked tokens cannot be stak
 
 ## Treasury and Token Value
 
-20% of protocol revenue is contributed back to the treasury, planned to increase to 35% as the protocol matures—subject to MetaDAO futarchy governance. This creates a direct link between protocol usage and token economics.
+20% of protocol fees are contributed to the treasury, planned to increase to 35% as the protocol matures—subject to MetaDAO futarchy governance.
 
-- 20% of protocol revenue flows to the on-chain treasury (planned increase to 35% via MetaDAO futarchy governance)
-- Via MetaDAO futarchy governance, token holders decide how treasury funds are deployed—including buy-and-burn, ecosystem grants, liquidity incentives, or other value-accruing actions
-- Buy-and-burn is one governance-approved mechanism: tokens purchased on the open market via DEX and sent to the zero address
+- 20% of protocol fees flow to the on-chain treasury (planned increase to 35% via MetaDAO futarchy governance)
+- Via MetaDAO futarchy governance, token holders decide how treasury funds are deployed—including token retirement (supply reduction), ecosystem grants, liquidity operations, or other protocol-serving actions
+- Token retirement is one governance-approved mechanism: tokens purchased on the open market via DEX and sent to the zero address
 - First treasury allocation expected Q2 2026 (~3 months post-TGE)
 
-The mechanism gives token holders direct control over value accrual. Revenue comes in, governance decides deployment, and the treasury scales with volume—ensuring protocol traction translates to token holder outcomes.
+Token holders govern how treasury funds are deployed. All treasury actions require governance approval through the futarchy mechanism. No treasury deployment is automatic or guaranteed.
 
 ---
 
@@ -321,7 +321,7 @@ The mechanism gives token holders direct control over value accrual. Revenue com
 
 - **Circle Admins** stake $P2P to operate merchant networks. Their stake is slashable, and a portion of their rewards is locked as an insurance buffer.
 - **Merchants** stake USDC as working capital for order fulfillment. Their capacity is bounded by their stake.
-- **Delegators** stake $P2P to Circles to earn a share of revenue. Only delegation to $P2P-denominated Circles grants governance voting rights.
+- **Delegators** stake $P2P to Circles to participate in protocol operations and may receive incentive allocations conditional on the Circle's performance. Only delegation to $P2P-denominated Circles grants governance voting rights.
 
 ---
 
@@ -438,7 +438,7 @@ Inline notes throughout the docs mark features planned for future releases. For 
 
 ## Disclosures
 
-The $P2P token provides governance rights and economic utility within the protocol, independently of any corporate entity. It carries no claim on foundation assets and no debt obligation. Value derives from protocol usage and network effects rather than any promise of returns.
+The $P2P token provides governance rights and operational participation utility within the protocol, independently of any corporate entity. It carries no claim on foundation assets, no debt obligation, and no contractual right to revenue distributions or financial returns. Any incentive allocations received through protocol participation are conditional on active operational involvement and are determined by governance, not guaranteed. The token does not constitute a security, investment product, or financial instrument in any jurisdiction. Prospective participants should seek independent legal and financial advice. Value, if any, derives from protocol usage and network effects rather than any promise of returns.
 
 ---
 
@@ -458,15 +458,15 @@ Yes. This is protocol ownership, distinct from equity in a traditional company. 
 
 ### How does the MetaDAO-style sale work?
 
-Users commit USDC during a 4-day window. **There is no bid wall**—clearing is pro-rata against the accepted cap, with refunds for any unallocated USDC. The ask is **$6M**; if commitments exceed that, excess is refunded. If total commitments are **above $80M** (and up to **$150M**), up to **$8M** is accepted at **$20M** FDV; if they are **above $150M**, up to **$10M** is accepted at **$25M** FDV. If oversubscribed at the active cap, allocations follow the pro-rata and XP-preference rules on the [MetaDAO sale](/for-investors/metadao-sale) page. Existing protocol users receive a preferential allocation at the same valuation as all ICO investors, based on their XP on [p2p.foundation](https://p2p.foundation/). No private rounds happen at TGE. The sale is the primary distribution event.
+Users commit USDC during a 4-day window. **There is no bid wall**—clearing is pro-rata against the accepted cap, with refunds for any unallocated USDC. The ask is **$6M**; if commitments exceed that, excess is refunded. If total commitments are **above $80M** (and up to **$150M**), up to **$8M** is accepted at **$20.64M** FDV; if they are **above $150M**, up to **$10M** is accepted at **$25.8M** FDV. If oversubscribed at the active cap, allocations follow the pro-rata and XP-preference rules on the [MetaDAO sale](/for-investors/metadao-sale) page. Existing protocol users receive a preferential allocation at the same valuation as all ICO investors, based on their XP on [p2p.foundation](https://p2p.foundation/). No private rounds happen at TGE. The sale is the primary distribution event.
 
 ### What unlocks at TGE?
 
 10M sale tokens + 2.9M liquidity tokens (12.9M total, 50% of supply). Zero investor or team tokens unlock at launch.
 
-### How does treasury-funded value accrual work?
+### How does the treasury work?
 
-20% of protocol revenue flows to the on-chain treasury, planned to increase to 35% as the protocol matures—subject to MetaDAO futarchy governance. Token holders decide how to deploy these funds. Buy-and-burn is one approved mechanism—tokens purchased on the open market and sent to the zero address. The treasury is funded entirely by real transaction revenue from a working product. More protocol usage means a larger treasury and stronger governance-directed value accrual.
+20% of protocol fees flow to the on-chain treasury, planned to increase to 35% as the protocol matures—subject to MetaDAO futarchy governance. Token holders decide how to deploy these funds. Token retirement (supply reduction) is one governance-approved mechanism—tokens purchased on the open market and sent to the zero address. The treasury is funded by protocol fees from a working product. Treasury size scales with protocol usage. All deployment decisions are made through governance.
 
 ### Is supply fixed?
 
