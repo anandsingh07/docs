@@ -1,30 +1,30 @@
-# For Investors
+# For Token Holders
 
 ## Start Here
 
-> **Before proceeding, please read the [Disclosures](/for-investors/disclosures).** $P2P is not available to US persons. Nothing in this section constitutes an offer of securities or investment advice.
+> **Before proceeding, please read the [Disclosures](/for-token-holders/disclosures).** $P2P is not available to US persons. Nothing in this section constitutes an offer of securities or investment advice.
 
-This page covers the token thesis, economics, governance model, and investor FAQs in one place.
+This page covers the token thesis, economics, governance model, and FAQs in one place.
 
 **Quick links to key sections.**
 
-- [Investor thesis](/for-investors/investor-thesis)
-- [Why the token exists](/for-investors/why-the-token-exists)
-- [Token details and allocation](/for-investors/token-details)
-- [MetaDAO sale](/for-investors/metadao-sale)
-- [Vesting schedules](/for-investors/vesting-schedules)
-- [Treasury operations](/for-investors/treasury-operations)
-- [Staking mechanics](/for-investors/staking-mechanics)
-- [Token-holder governance](/for-investors/token-holder-governance)
-- [Progressive decentralization](/for-investors/progressive-decentralization)
-- [Insurance](/for-investors/insurance)
-- [FAQ](/for-investors/faq)
+- [Protocol thesis](/for-token-holders/protocol-thesis)
+- [Why the token exists](/for-token-holders/why-the-token-exists)
+- [Token details and allocation](/for-token-holders/token-details)
+- [MetaDAO sale](/for-token-holders/metadao-sale)
+- [Vesting schedules](/for-token-holders/vesting-schedules)
+- [Treasury operations](/for-token-holders/treasury-operations)
+- [Staking mechanics](/for-token-holders/staking-mechanics)
+- [Token-holder governance](/for-token-holders/token-holder-governance)
+- [Progressive decentralization](/for-token-holders/progressive-decentralization)
+- [Insurance](/for-token-holders/insurance)
+- [FAQ](/for-token-holders/faq)
 
 Also see [`/whitepaper`](/whitepaper/abstract) for protocol context and [`/for-builders`](/for-builders/start-here) for contract-level governance detail.
 
 ---
 
-## Investor Thesis
+## Protocol Thesis
 
 - **Working core rails exist today.** Onramp/offramp, matching, disputes, and on-chain parameter controls are live and processing volume.
 - **Expansion path is clear.** Remittance and multi-currency tracks build on existing rails. They add corridors and users, not new trust assumptions.B2B SDK for third party developers to integrate P2P protocol rails is set to launch by june 2026
@@ -92,18 +92,18 @@ No single party captures a majority of protocol fees. Merchants earn the most be
 | **MetaDAO Sale** | **10,000,000** | **38.8%** | Unlocked at launch |
 | **Liquidity** | **2,900,000** | **11.2%** | Treasury-provided to DEX pools at launch |
 | **Team** | **7,740,000** | **30%** | Performance-based (see vesting) |
-| **Investors** | **5,160,000** | **20%** | 1-year cliff, then quarterly (see vesting) |
+| **Backers** | **5,160,000** | **20%** | 1-year cliff, then quarterly (see vesting) |
 | **Total** | **25,800,000** | **100%** | |
 
-No investor or team tokens unlock at TGE. At launch, 12.9M tokens circulate (10M sale + 2.9M liquidity). Future issuance is governance-gated.
+No backer or team tokens unlock at TGE. At launch, 12.9M tokens circulate (10M sale + 2.9M liquidity). Future issuance is governance-gated.
 
 ---
 
-## Past Investors
+## Past Backers
 
 - **[Reclaim Protocol](https://reclaimprotocol.org/)** angel invested in P2P Protocol in March 2023. They own **3.45%** of the supply and invested $80K.
 - **[Alliance DAO](https://alliance.xyz/)** invested in March 2024. They own **4.66%** of supply and invested $350K.
-- **[Multicoin Capital](https://multicoin.capital/)** is the first institutional investor in P2P Protocol. They invested $1.4 million in January 2025 at $15M FDV and own **9.33%** of the supply.
+- **[Multicoin Capital](https://multicoin.capital/)** is the first institutional backer of P2P Protocol. They committed $1.4 million in January 2025 at $15M FDV and own **9.33%** of the supply.
 - **[Coinbase Ventures](https://www.coinbase.com/ventures)** invested $500K in P2P Protocol in February 2025 at $19.5M FDV. They own **2.56%** of the supply.
 
 ---
@@ -295,7 +295,7 @@ Team tokens follow the MetaDAO performance package model. Rather than time-based
 
 The team only benefits when the protocol grows.
 
-### Investor Tokens (20% / 5.16M)
+### Backer Tokens (20% / 5.16M)
 
 - Months 0 through 12 are fully locked (cliff)
 - At month 12, 1,032,000 tokens unlock (20%)
@@ -452,7 +452,7 @@ The $P2P token provides governance rights and operational participation utility 
 
 ### Why is the token launching on Solana if the protocol is on Base?
 
-The protocol is live on Base today. The token launches on Solana to build network effects ahead of deploying the protocol there. Solana is the planned hub of a multichain architecture. See [Multichain Strategy](/for-investors/multichain-strategy) for the full roadmap.
+The protocol is live on Base today. The token launches on Solana to build network effects ahead of deploying the protocol there. Solana is the planned hub of a multichain architecture. See [Multichain Strategy](/for-token-holders/multichain-strategy) for the full roadmap.
 
 ### Why does P2P need a token?
 
@@ -464,11 +464,11 @@ Yes. This is protocol ownership, distinct from equity in a traditional company. 
 
 ### How does the MetaDAO-style sale work?
 
-Users commit USDC during a 4-day window. **There is no bid wall**—clearing is pro-rata against the accepted cap, with refunds for any unallocated USDC. The ask is **$6M**; if commitments exceed that, excess is refunded. If total commitments are **above $80M** (and up to **$150M**), up to **$8M** is accepted at **$20.64M** FDV; if they are **above $150M**, up to **$10M** is accepted at **$25.8M** FDV. If oversubscribed at the active cap, allocations follow the pro-rata and XP-preference rules on the [MetaDAO sale](/for-investors/metadao-sale) page. Existing protocol users receive a preferential allocation at the same valuation as all public sale participants, based on their XP on [p2p.foundation](https://p2p.foundation/). No private rounds happen at TGE. The sale is the primary distribution event.
+Users commit USDC during a 4-day window. **There is no bid wall**—clearing is pro-rata against the accepted cap, with refunds for any unallocated USDC. The ask is **$6M**; if commitments exceed that, excess is refunded. If total commitments are **above $80M** (and up to **$150M**), up to **$8M** is accepted at **$20.64M** FDV; if they are **above $150M**, up to **$10M** is accepted at **$25.8M** FDV. If oversubscribed at the active cap, allocations follow the pro-rata and XP-preference rules on the [MetaDAO sale](/for-token-holders/metadao-sale) page. Existing protocol users receive a preferential allocation at the same valuation as all public sale participants, based on their XP on [p2p.foundation](https://p2p.foundation/). No private rounds happen at TGE. The sale is the primary distribution event.
 
 ### What unlocks at TGE?
 
-10M sale tokens + 2.9M liquidity tokens (12.9M total, 50% of supply). Zero investor or team tokens unlock at launch.
+10M sale tokens + 2.9M liquidity tokens (12.9M total, 50% of supply). Zero backer or team tokens unlock at launch.
 
 ### How does the treasury work?
 
