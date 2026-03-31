@@ -1,0 +1,7 @@
+﻿{
+    "errors":  [
+                   {
+                       "message":  "bad query: key must be a string at line 1 column 2"
+                   }
+               ]
+}

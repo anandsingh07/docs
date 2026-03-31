@@ -34,6 +34,13 @@
   flex-wrap: wrap;
 }
 
+.statsRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
 .features {
   padding: 4rem 0 6rem;
   display: flex;

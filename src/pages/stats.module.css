@@ -1,0 +1,489 @@
+/* ── Page wrapper ─────────────────────────────────────────────────────── */
+
+.page {
+  min-height: 100vh;
+  background: var(--ifm-background-color);
+}
+
+/* ── Hero ──────────────────────────────────────────────────────────────── */
+
+.hero {
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroInner {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--p2p-text-secondary);
+  margin-bottom: 1.5rem;
+  background: var(--glass-bg);
+}
+
+.heroTag::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: var(--hero-title-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.heroSubtitle {
+  font-size: 1.05rem;
+  color: var(--p2p-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.lastUpdated {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--p2p-text-secondary);
+}
+
+.lastUpdated a {
+  color: var(--p2p-blue);
+  text-decoration: none;
+}
+
+.lastUpdated a:hover {
+  text-decoration: underline;
+}
+
+.liveIndicator {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ── Content wrapper ──────────────────────────────────────────────────── */
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+/* ── Sections ──────────────────────────────────────────────────────────── */
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--p2p-text-primary);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  font-size: 0.95rem;
+  color: var(--p2p-text-secondary);
+  margin-bottom: 1.75rem;
+  line-height: 1.6;
+}
+
+/* ── Global Stats Grid ─────────────────────────────────────────────────── */
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statCard {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.statCard:hover {
+  border-color: var(--p2p-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(73, 63, 238, 0.1);
+}
+
+.statIcon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.statValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--p2p-text-primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  background: var(--hero-title-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--p2p-text-primary);
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.statDescription {
+  font-size: 0.78rem;
+  color: var(--p2p-text-secondary);
+  line-height: 1.5;
+}
+
+/* ── "What This Means" Explainer Grid ─────────────────────────────────── */
+
+.explainerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .explainerGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.explainerCard {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.explainerCard:hover {
+  border-color: var(--border-color);
+}
+
+.explainerIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.explainerTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--p2p-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.explainerText {
+  font-size: 0.88rem;
+  color: var(--p2p-text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Regional Grid ─────────────────────────────────────────────────────── */
+
+.regionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .regionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .regionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.regionCard {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.regionCard:hover {
+  border-color: rgba(73, 63, 238, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(73, 63, 238, 0.08);
+}
+
+.regionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+}
+
+.regionFlag {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.regionCountry {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--p2p-text-primary);
+  line-height: 1.2;
+}
+
+.regionCurrency {
+  font-size: 0.75rem;
+  color: var(--p2p-text-secondary);
+  margin-top: 0.15rem;
+}
+
+.regionBadge {
+  margin-left: auto;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.regionMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: var(--glass-bg);
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+}
+
+.regionMetric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.regionMetricValue {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--p2p-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.regionMetricLabel {
+  font-size: 0.65rem;
+  color: var(--p2p-text-secondary);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* ── Progress bar ─────────────────────────────────────────────────────── */
+
+.progressBar {
+  margin-top: 0.25rem;
+}
+
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--p2p-text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.progressTrack {
+  height: 4px;
+  background: var(--glass-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1s ease;
+}
+
+/* ── Data Source card ──────────────────────────────────────────────────── */
+
+.sourceSection {
+  margin-top: 2rem;
+}
+
+.sourceCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.sourceLeft {
+  flex: 1;
+  min-width: 220px;
+}
+
+.sourceTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--p2p-text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.sourceText {
+  font-size: 0.83rem;
+  color: var(--p2p-text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.sourceLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.sourceLink {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--p2p-blue);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.sourceLink:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* ── Loading skeleton ─────────────────────────────────────────────────── */
+
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .skeletonGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skeletonCard {
+  height: 160px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* ── Error state ──────────────────────────────────────────────────────── */
+
+.errorState {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+}
+
+.errorIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.errorState p {
+  color: var(--p2p-text-secondary);
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.errorSub {
+  font-size: 0.82rem !important;
+}
+
+.errorSub a {
+  color: var(--p2p-blue);
+  text-decoration: none;
+}
